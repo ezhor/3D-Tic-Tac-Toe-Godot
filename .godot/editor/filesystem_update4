@@ -1,0 +1,5 @@
+res://Resources/CameraEnvironment.tres
+res://Shaders/MainShader.tres
+res://Materials/LayerMaterial.tres
+res://Materials/CircleMaterial.tres
+res://Materials/CrossMaterial.tres

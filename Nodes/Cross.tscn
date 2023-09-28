@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://doklnio7k6s6b"]
+
+[ext_resource type="PackedScene" uid="uid://dcwyk2u528lji" path="res://Models/Cross.blend" id="1_qxfbf"]
+[ext_resource type="Material" uid="uid://bnw15ar0o77qc" path="res://Materials/CrossMaterial.tres" id="2_28j2t"]
+
+[node name="Cross" instance=ExtResource("1_qxfbf")]
+
+[node name="Cube" parent="." index="0"]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0)
+surface_material_override/0 = ExtResource("2_28j2t")

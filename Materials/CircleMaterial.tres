@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dfa385vlsmdyf"]
+
+[ext_resource type="Shader" uid="uid://d327u2g7ks130" path="res://Shaders/MainShader.tres" id="1_ekmxw"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_ekmxw")
+shader_parameter/Color = Color(1, 0, 0, 1)
+shader_parameter/Light = Color(1, 1, 1, 1)

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ronfsdh4x8v3"]
+
+[ext_resource type="PackedScene" uid="uid://dtujmma5w75fg" path="res://Models/Layer.blend" id="1_jxrwc"]
+[ext_resource type="Material" uid="uid://lhg1ku2nvoq7" path="res://Materials/LayerMaterial.tres" id="2_xjt8d"]
+
+[node name="Layer" instance=ExtResource("1_jxrwc")]
+
+[node name="Cube" parent="." index="0"]
+material_override = ExtResource("2_xjt8d")
