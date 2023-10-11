@@ -1,2 +1,0 @@
-BoxShape3D
-ShaderMaterial

@@ -1,9 +1,0 @@
-res://Nodes/Main.tscn
-res://Shaders/MainShader.tres
-res://Resources/CameraEnvironment.tres
-res://Materials/LayerMaterial.tres
-res://Scripts/ClickCollider.gd
-res://Nodes/ClickCollider.tscn
-res://Scripts/Main.gd
-res://Materials/CircleMaterial.tres
-res://Materials/CrossMaterial.tres
