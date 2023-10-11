@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqn6xepd1woex"]
+
+[ext_resource type="Script" path="res://Scripts/ClickCollider.gd" id="1_73tr4"]
+[ext_resource type="Shape3D" uid="uid://bldwq84ie1aq6" path="res://Resources/ColliderShape.tres" id="1_qfjy3"]
+
+[node name="Area3D" type="Area3D"]
+script = ExtResource("1_73tr4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.66, 0, 0, 0, 0.66, 0, 0, 0, 0.66, 0, 0, 0)
+shape = ExtResource("1_qfjy3")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

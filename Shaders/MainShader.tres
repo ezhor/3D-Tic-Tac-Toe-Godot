@@ -24,7 +24,6 @@ void fragment() {
 
 
 // Output:0
-	ALBEDO = vec3(n_out3p0.xyz);
 	EMISSION = vec3(n_out3p0.xyz);
 
 
@@ -41,9 +40,10 @@ void light() {
 
 }
 "
+graph_offset = Vector2(-195.375, 32.8623)
 nodes/fragment/3/node = SubResource("VisualShaderNodeColorParameter_tlnny")
 nodes/fragment/3/position = Vector2(-160, 180)
-nodes/fragment/connections = PackedInt32Array(3, 0, 0, 0, 3, 0, 0, 5)
+nodes/fragment/connections = PackedInt32Array(3, 0, 0, 5)
 nodes/light/2/node = SubResource("VisualShaderNodeColorParameter_iwbbo")
 nodes/light/2/position = Vector2(80, 180)
 nodes/light/connections = PackedInt32Array(2, 0, 0, 0)

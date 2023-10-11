@@ -1,9 +1,38 @@
-[gd_scene load_steps=3 format=3 uid="uid://ronfsdh4x8v3"]
+[gd_scene load_steps=4 format=3 uid="uid://ronfsdh4x8v3"]
 
 [ext_resource type="PackedScene" uid="uid://dtujmma5w75fg" path="res://Models/Layer.blend" id="1_jxrwc"]
 [ext_resource type="Material" uid="uid://lhg1ku2nvoq7" path="res://Materials/LayerMaterial.tres" id="2_xjt8d"]
+[ext_resource type="PackedScene" uid="uid://dqn6xepd1woex" path="res://Nodes/ClickCollider.tscn" id="3_iedrx"]
 
 [node name="Layer" instance=ExtResource("1_jxrwc")]
 
 [node name="Cube" parent="." index="0"]
 material_override = ExtResource("2_xjt8d")
+
+[node name="Cells" type="Node" parent="." index="1"]
+
+[node name="ClickCollider" parent="Cells" index="0" instance=ExtResource("3_iedrx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.67, 0, -0.67)
+
+[node name="ClickCollider2" parent="Cells" index="1" instance=ExtResource("3_iedrx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.67)
+
+[node name="ClickCollider3" parent="Cells" index="2" instance=ExtResource("3_iedrx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.67, 0, -0.67)
+
+[node name="ClickCollider4" parent="Cells" index="3" instance=ExtResource("3_iedrx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.67, 0, 0)
+
+[node name="ClickCollider5" parent="Cells" index="4" instance=ExtResource("3_iedrx")]
+
+[node name="ClickCollider6" parent="Cells" index="5" instance=ExtResource("3_iedrx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.67, 0, 0)
+
+[node name="ClickCollider7" parent="Cells" index="6" instance=ExtResource("3_iedrx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.67, 0, 0.67)
+
+[node name="ClickCollider8" parent="Cells" index="7" instance=ExtResource("3_iedrx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.67)
+
+[node name="ClickCollider9" parent="Cells" index="8" instance=ExtResource("3_iedrx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.67, 0, 0.67)

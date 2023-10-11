@@ -1,12 +1,13 @@
 [gd_resource type="Environment" format=3 uid="uid://35pyshb4swwi"]
 
 [resource]
+ambient_light_source = 1
 glow_enabled = true
 glow_intensity = 6.0
 glow_strength = 0.85
 glow_bloom = 0.05
 glow_blend_mode = 0
-fog_light_color = Color(1, 1, 1, 1)
+fog_light_color = Color(0.321569, 0.321569, 0.321569, 1)
 fog_light_energy = 7.84
 fog_sun_scatter = 4.25
 fog_density = 0.032
