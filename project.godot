@@ -16,6 +16,14 @@ config/features=PackedStringArray("4.1", "Mobile")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameController="*res://Scripts/GameController.gd"
+
+[display]
+
+window/handheld/orientation=1
+
 [filesystem]
 
 import/fbx/enabled=false

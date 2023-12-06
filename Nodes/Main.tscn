@@ -1,11 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cv23ldf2m86wb"]
+[gd_scene load_steps=3 format=3 uid="uid://cv23ldf2m86wb"]
 
 [ext_resource type="Environment" uid="uid://35pyshb4swwi" path="res://Resources/CameraEnvironment.tres" id="1_57vqn"]
 [ext_resource type="PackedScene" uid="uid://ronfsdh4x8v3" path="res://Nodes/Layer.tscn" id="1_cikqe"]
-[ext_resource type="Script" path="res://Scripts/Main.gd" id="1_twry3"]
 
 [node name="Main" type="Node3D" groups=["CellClicked"]]
-script = ExtResource("1_twry3")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.810042, 0.586372, 0, -0.586372, 0.810042, 0, 1.378, 1.812)
