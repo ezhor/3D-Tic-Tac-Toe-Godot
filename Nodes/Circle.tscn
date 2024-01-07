@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://fm0us4wtxb5d"]
+[gd_scene load_steps=6 format=3 uid="uid://fm0us4wtxb5d"]
 
 [ext_resource type="PackedScene" uid="uid://cjo16ckmqvulr" path="res://Models/Circle.blend" id="1_ubasu"]
 [ext_resource type="Material" uid="uid://dfa385vlsmdyf" path="res://Materials/CircleMaterial.tres" id="2_33xrh"]
+[ext_resource type="AudioStream" uid="uid://cqggxlaqmr6j7" path="res://audio/circle.wav" id="3_a8tbv"]
 
 [sub_resource type="Animation" id="Animation_hqgm8"]
 resource_name = "PieceEntry"
@@ -22,6 +23,7 @@ _data = {
 [node name="Circle" instance=ExtResource("1_ubasu")]
 
 [node name="Circle" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 material_override = ExtResource("2_33xrh")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
@@ -30,3 +32,7 @@ movie_quit_on_finish = true
 libraries = {
 "": SubResource("AnimationLibrary_nj5ub")
 }
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="2"]
+stream = ExtResource("3_a8tbv")
+autoplay = true

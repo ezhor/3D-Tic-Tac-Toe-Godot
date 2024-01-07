@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cv23ldf2m86wb"]
+[gd_scene load_steps=4 format=3 uid="uid://cv23ldf2m86wb"]
 
 [ext_resource type="Environment" uid="uid://35pyshb4swwi" path="res://Resources/CameraEnvironment.tres" id="1_57vqn"]
 [ext_resource type="PackedScene" uid="uid://ronfsdh4x8v3" path="res://Nodes/Layer.tscn" id="1_cikqe"]
+[ext_resource type="AudioStream" uid="uid://bbyujysxajtdb" path="res://audio/music.wav" id="3_8t1p0"]
 
 [node name="Main" type="Node3D" groups=["CellClicked"]]
 
@@ -18,3 +19,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.5)
 
 [node name="LayerDown" parent="." instance=ExtResource("1_cikqe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.5)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_8t1p0")
+volume_db = -20.0
+autoplay = true
