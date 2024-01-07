@@ -9,7 +9,7 @@
 [node name="Cube" parent="." index="0"]
 material_override = ExtResource("2_xjt8d")
 
-[node name="Cells" type="Node" parent="." index="1"]
+[node name="Cells" type="Node3D" parent="." index="1"]
 
 [node name="ClickCollider" parent="Cells" index="0" instance=ExtResource("3_iedrx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.67, 0, -0.67)
